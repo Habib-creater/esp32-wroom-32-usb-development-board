@@ -4,17 +4,23 @@ A complete 2-layer ESP32-WROOM-32E development board designed in KiCad, integrat
 
 ![ESP32-WROOM-32 USB Development Board](docs/images/3d-front.png)
 
+---
+
 ## Overview
 
-This project presents the complete hardware design of a compact ESP32-WROOM-32E development board, including schematic capture, component selection, PCB layout, power distribution, interface protection, connectivity, and manufacturing-data generation.
+This project presents the complete hardware design of a compact ESP32-WROOM-32E development board, including schematic capture, component selection, PCB layout, power distribution, interface protection, signal connectivity, design-rule verification, and manufacturing-data generation.
 
-The design combines a USB interface, USB-to-UART bridge, regulated 3.3 V power architecture, ESP32 boot and reset circuitry, GPIO expansion headers, and protected I²C connectivity into a single 2-layer PCB.
+The design combines a Micro-USB interface, USB-to-UART bridge, regulated 3.3 V power architecture, ESP32 boot and reset circuitry, GPIO expansion headers, and protected I²C connectivity into a single 2-layer PCB.
+
+The complete design package includes the KiCad schematic and PCB source files, bill of materials, manufacturing outputs, design documentation, and verification records.
+
+---
 
 ## Key Features
 
 - ESP32-WROOM-32E based embedded hardware platform
 - Micro-USB connectivity for power and USB communication
-- CH340E USB-to-UART bridge powered from the 3.3 V rail
+- CH340E USB-to-UART bridge powered from the +3.3 V rail
 - AP2112K-3.3 low-dropout voltage regulator
 - Protected USB power input with resettable fuse
 - Dedicated USB ESD protection
@@ -23,13 +29,17 @@ The design combines a USB interface, USB-to-UART bridge, regulated 3.3 V power a
 - GPIO expansion through dual 14-pin headers
 - GPIO21 / GPIO22 dedicated to I²C SDA / SCL
 - 4.7 kΩ I²C pull-up resistors
-- AXGD10603NR low-capacitance ESD protection on I²C lines
-- ESP32 antenna keepout consideration in PCB layout
+- AXGD10603NR low-capacitance ESD/TVS protection on I²C lines
 - Local IC decoupling and bulk power filtering
-- Complete KiCad schematic and PCB design
+- ESP32 antenna-region and RF keepout consideration
+- 2-layer PCB layout
+- Complete KiCad schematic and PCB source files
 - Bill of Materials (BOM)
 - Gerber and drill manufacturing outputs
-- ERC and DRC verification completed
+- Electrical Rules Check (ERC) completed
+- Design Rules Check (DRC) completed
+
+---
 
 ## Project Specifications
 
@@ -52,6 +62,8 @@ The design combines a USB interface, USB-to-UART bridge, regulated 3.3 V power a
 | CAD Platform | KiCad 9.x |
 | Design Verification | ERC + DRC completed |
 | Hardware Status | PCB not yet fabricated |
+
+---
 
 ## Functional Architecture
 
