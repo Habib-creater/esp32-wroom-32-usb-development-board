@@ -101,11 +101,6 @@ flowchart LR
 The complete electrical schematic is available as a PDF for detailed review.
 
 **[📄 View ESP32-WROOM-32 Schematic PDF](ESP32-WROOM-32-Schematic-original-export.pdf)**
-
-The editable KiCad schematic source is also included in the repository.
-
-**[Open KiCad Schematic](hardware/kicad/ESP32-WROOM-32.kicad_sch)**
-
 ---
 
 ## PCB Layout
