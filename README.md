@@ -12,7 +12,7 @@ This project presents the complete hardware design of a compact ESP32-WROOM-32E 
 
 The design combines a Micro-USB interface, USB-to-UART bridge, regulated 3.3 V power architecture, ESP32 boot and reset circuitry, GPIO expansion headers, and protected I²C connectivity into a single 2-layer PCB.
 
-The complete design package includes the KiCad schematic and PCB source files, bill of materials, manufacturing outputs, design documentation, and verification records.
+The complete design package includes the KiCad schematic and PCB source files, bill of materials, manufacturing outputs, design documentation, PCB layout views, 3D board views, and verification records.
 
 ---
 
@@ -100,9 +100,9 @@ flowchart LR
 
 The complete electrical schematic is available as a PDF for detailed review.
 
-**[📄 View ESP32-WROOM-32 Schematic PDF](docs/ESP32-WROOM-32-Schematic.pdf)**
+**[📄 View ESP32-WROOM-32 Schematic PDF](ESP32-WROOM-32-Schematic-original-export.pdf)**
 
-The editable KiCad schematic source is also included:
+The editable KiCad schematic source is also included in the repository.
 
 **[Open KiCad Schematic](hardware/kicad/ESP32-WROOM-32.kicad_sch)**
 
@@ -112,15 +112,15 @@ The editable KiCad schematic source is also included:
 
 The PCB is a compact **51.75 mm × 31.00 mm, 2-layer design** with a nominal thickness of 1.6 mm.
 
-### Layout 1
+### Layout View 1
 
-![ESP32-WROOM-32 PCB Layout 1](docs/images/layout_1.png)
+![ESP32-WROOM-32 PCB Layout](docs/images/pcb-layout.png)
 
-### Layout 2
+### Layout View 2
 
-![ESP32-WROOM-32 PCB Layout 2](docs/images/layout_2.png)
+![ESP32-WROOM-32 Alternate PCB Layout](docs/images/pcb-layout-alternate.png)
 
-The PCB layout considers:
+The PCB layout was developed with consideration for:
 
 - ESP32 antenna region and RF keepout
 - USB interface routing
@@ -132,11 +132,27 @@ The PCB layout considers:
 - Board-edge constraints
 - Signal routing
 
+The editable KiCad PCB source is included in the repository.
+
+**[Open KiCad PCB](hardware/kicad/ESP32-WROOM-32.kicad_pcb)**
+
 ---
 
 ## PCB Routing
 
+The completed PCB routing is shown below.
+
 ![ESP32-WROOM-32 PCB Routing](docs/images/pcb-routing.png)
+
+The routing includes:
+
+- USB D+ / D−
+- USB-to-UART connections
+- ESP32 UART connections
+- I²C signals
+- Power distribution
+- GPIO connections
+- Ground connections
 
 ---
 
@@ -150,7 +166,7 @@ The PCB layout considers:
 
 ![ESP32-WROOM-32 3D Back View](docs/images/3d-back.png)
 
-### 3D View 2
+### Additional 3D View
 
 ![ESP32-WROOM-32 3D View 2](docs/images/3d_2.png)
 
@@ -172,6 +188,8 @@ ERC was completed to review:
 - Interface connections
 - Electrical rule violations
 
+Relevant ERC issues were reviewed and resolved as part of the schematic verification process.
+
 ### Design Rules Check (DRC)
 
 PCB DRC was completed to review:
@@ -185,6 +203,8 @@ PCB DRC was completed to review:
 - Connectivity
 - Manufacturing-rule constraints
 
+The resulting PCB layout was reviewed for unresolved critical DRC violations.
+
 ### Verification Summary
 
 | Verification Item | Status |
@@ -195,16 +215,14 @@ PCB DRC was completed to review:
 | Component Footprints | ✅ Reviewed |
 | Board Dimensions | ✅ Verified |
 | Manufacturing Outputs | ✅ Generated |
-| PCB Fabrication | Not yet performed |
-| Hardware Bring-up | Not yet performed |
-| Electrical Measurements | Not yet performed |
-| RF Validation | Not yet performed |
 
 ---
 
 ## Manufacturing Data
 
-The repository includes the generated manufacturing data:
+The repository includes the generated manufacturing data associated with the PCB design.
+
+The manufacturing package contains:
 
 - Gerber copper layers
 - Solder-mask layers
@@ -219,7 +237,11 @@ The repository includes the generated manufacturing data:
 
 ## Bill of Materials
 
+The project includes a component-level Bill of Materials for the board.
+
 **[View Bill of Materials](hardware/bom/ESP32-WROOM-32_BOM.csv)**
+
+The BOM contains component references, values, footprints, and available part/manufacturer information.
 
 ---
 
@@ -234,6 +256,8 @@ ESP32-WROOM-32-USB-Development-Board/
 ├── .gitignore
 ├── .gitattributes
 │
+├── ESP32-WROOM-32-Schematic-original-export.pdf
+│
 ├── hardware/
 │   ├── kicad/
 │   │   ├── ESP32-WROOM-32.kicad_pro
@@ -247,7 +271,6 @@ ESP32-WROOM-32-USB-Development-Board/
 │       └── gerbers/
 │
 ├── docs/
-│   ├── ESP32-WROOM-32-Schematic.pdf
 │   ├── SCHEMATIC.md
 │   ├── ARCHITECTURE.md
 │   ├── PINOUT.md
@@ -258,8 +281,8 @@ ESP32-WROOM-32-USB-Development-Board/
 │       ├── 3d-front.png
 │       ├── 3d-back.png
 │       ├── 3d_2.png
-│       ├── layout_1.png
-│       ├── layout_2.png
+│       ├── pcb-layout.png
+│       ├── pcb-layout-alternate.png
 │       └── pcb-routing.png
 │
 ├── project/
@@ -269,3 +292,56 @@ ESP32-WROOM-32-USB-Development-Board/
 │
 └── archive/
     └── original/
+```
+
+---
+
+## Design Documentation
+
+| Document | Description |
+|---|---|
+| [Architecture](docs/ARCHITECTURE.md) | Functional and power architecture |
+| [Schematic Documentation](docs/SCHEMATIC.md) | Schematic organization and design blocks |
+| [Pinout](docs/PINOUT.md) | GPIO and interface mapping |
+| [Manufacturing](docs/MANUFACTURING.md) | Manufacturing-data inventory |
+| [Validation](docs/VALIDATION.md) | Design verification information |
+| [Design Notes](project/design-notes.md) | Engineering design notes |
+| [Repository Audit](project/repository-audit.md) | Project package scope and status |
+
+---
+
+## Current Design Status
+
+**Status: PCB design package completed**
+
+The schematic, PCB layout, component selection, BOM, manufacturing outputs, and CAD-level design verification have been completed.
+
+The PCB has **not yet been fabricated or hardware-validated**.
+
+The repository therefore documents the CAD design and generated engineering files without claiming measured electrical, RF, thermal, assembly, or production results.
+
+---
+
+## Tools and Technologies
+
+- KiCad 9.x
+- Schematic Capture
+- PCB Layout
+- Electrical Rules Check (ERC)
+- Design Rules Check (DRC)
+- Gerber Generation
+- Drill File Generation
+- Bill of Materials Generation
+- 3D PCB Visualization
+- USB-UART Interface Design
+- Power Supply Design
+- ESD Protection
+- I²C Interface Design
+
+---
+
+## License
+
+This hardware design is released under the **CERN Open Hardware Licence Version 2 – Strongly Reciprocal (CERN-OHL-S-2.0)**.
+
+See the [`LICENSE`](LICENSE) file for the complete licence terms.
