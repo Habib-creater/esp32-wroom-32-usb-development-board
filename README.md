@@ -132,10 +132,6 @@ The PCB layout was developed with consideration for:
 - Board-edge constraints
 - Signal routing
 
-The editable KiCad PCB source is included in the repository.
-
-**[Open KiCad PCB](hardware/kicad/ESP32-WROOM-32.kicad_pcb)**
-
 ---
 
 ## PCB Routing
