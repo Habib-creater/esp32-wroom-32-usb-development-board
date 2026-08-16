@@ -172,11 +172,6 @@ The routing includes:
 ### Back View
 
 ![ESP32-WROOM-32 3D Back View](docs/images/3d-back.png)
-
-### Additional 3D View
-
-![ESP32-WROOM-32 3D View 2](docs/images/3d_2.png)
-
 ---
 
 ## Design Verification
