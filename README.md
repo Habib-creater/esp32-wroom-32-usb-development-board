@@ -96,15 +96,29 @@ flowchart LR
 
 ---
 
+---
+
 ## Schematic
 
-The complete electrical schematic is provided as a PDF for detailed review.
+The complete electrical schematic for the ESP32-WROOM-32 USB Development Board is provided below.
 
-[📄 View / Download ESP32-WROOM-32 Schematic PDF](./ESP32-WROOM-32-Schematic-original-export.pdf?raw=1)
+**[📄 View ESP32-WROOM-32 Schematic PDF](https://raw.githubusercontent.com/Habib-creater/esp32-wroom-32-usb-development-board/main/archive/original/ESP32-WROOM-32-Schematic-original-export.pdf)**
 
-The editable KiCad schematic source is also included in the repository:
+The PDF contains the complete electrical design, including:
 
-[Open KiCad Schematic](./hardware/kicad/ESP32-WROOM-32.kicad_sch)
+- USB Micro-B input and power interface
+- USB ESD protection
+- Resettable USB input protection
+- AP2112K-3.3 voltage regulation
+- CH340E USB-to-UART interface
+- ESP32-WROOM-32E module
+- BOOT / GPIO0 control
+- EN / RESET circuitry
+- GPIO expansion headers
+- I²C SDA / SCL interface
+- I²C pull-up resistors
+- I²C ESD/TVS protection
+- Power decoupling and filtering
 ## PCB Layout
 
 The PCB is a compact **51.75 mm × 31.00 mm, 2-layer design** with a nominal thickness of 1.6 mm.
