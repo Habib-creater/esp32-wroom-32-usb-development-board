@@ -92,5 +92,180 @@ flowchart LR
     SCL --> ESP
 
     ESP --> GPIO[GPIO Expansion Headers]
+```
 
+---
 
+## Schematic
+
+The complete electrical schematic is available as a PDF for detailed review.
+
+**[📄 View ESP32-WROOM-32 Schematic PDF](docs/ESP32-WROOM-32-Schematic.pdf)**
+
+The editable KiCad schematic source is also included:
+
+**[Open KiCad Schematic](hardware/kicad/ESP32-WROOM-32.kicad_sch)**
+
+---
+
+## PCB Layout
+
+The PCB is a compact **51.75 mm × 31.00 mm, 2-layer design** with a nominal thickness of 1.6 mm.
+
+### Layout 1
+
+![ESP32-WROOM-32 PCB Layout 1](docs/images/layout_1.png)
+
+### Layout 2
+
+![ESP32-WROOM-32 PCB Layout 2](docs/images/layout_2.png)
+
+The PCB layout considers:
+
+- ESP32 antenna region and RF keepout
+- USB interface routing
+- Power distribution
+- Ground return paths
+- Local IC decoupling
+- Component placement
+- Manufacturing clearances
+- Board-edge constraints
+- Signal routing
+
+---
+
+## PCB Routing
+
+![ESP32-WROOM-32 PCB Routing](docs/images/pcb-routing.png)
+
+---
+
+## 3D Board Views
+
+### Front View
+
+![ESP32-WROOM-32 3D Front View](docs/images/3d-front.png)
+
+### Back View
+
+![ESP32-WROOM-32 3D Back View](docs/images/3d-back.png)
+
+### 3D View 2
+
+![ESP32-WROOM-32 3D View 2](docs/images/3d_2.png)
+
+---
+
+## Design Verification
+
+The schematic and PCB were reviewed using KiCad's electrical and physical design verification tools.
+
+### Electrical Rules Check (ERC)
+
+ERC was completed to review:
+
+- Power connectivity
+- Pin electrical types
+- Net connectivity
+- Unconnected pins
+- Driver conflicts
+- Interface connections
+- Electrical rule violations
+
+### Design Rules Check (DRC)
+
+PCB DRC was completed to review:
+
+- Track clearances
+- Pad clearances
+- Via clearances
+- Board-edge clearances
+- Copper constraints
+- Solder-mask constraints
+- Connectivity
+- Manufacturing-rule constraints
+
+### Verification Summary
+
+| Verification Item | Status |
+|---|---|
+| Schematic ERC | ✅ Completed |
+| PCB DRC | ✅ Completed |
+| Net Connectivity | ✅ Reviewed |
+| Component Footprints | ✅ Reviewed |
+| Board Dimensions | ✅ Verified |
+| Manufacturing Outputs | ✅ Generated |
+| PCB Fabrication | Not yet performed |
+| Hardware Bring-up | Not yet performed |
+| Electrical Measurements | Not yet performed |
+| RF Validation | Not yet performed |
+
+---
+
+## Manufacturing Data
+
+The repository includes the generated manufacturing data:
+
+- Gerber copper layers
+- Solder-mask layers
+- Silkscreen layers
+- Paste layers
+- Board outline
+- Drill files
+
+**[View Manufacturing Documentation](docs/MANUFACTURING.md)**
+
+---
+
+## Bill of Materials
+
+**[View Bill of Materials](hardware/bom/ESP32-WROOM-32_BOM.csv)**
+
+---
+
+## Repository Structure
+
+```text
+ESP32-WROOM-32-USB-Development-Board/
+│
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── .gitignore
+├── .gitattributes
+│
+├── hardware/
+│   ├── kicad/
+│   │   ├── ESP32-WROOM-32.kicad_pro
+│   │   ├── ESP32-WROOM-32.kicad_sch
+│   │   └── ESP32-WROOM-32.kicad_pcb
+│   │
+│   ├── bom/
+│   │   └── ESP32-WROOM-32_BOM.csv
+│   │
+│   └── fabrication/
+│       └── gerbers/
+│
+├── docs/
+│   ├── ESP32-WROOM-32-Schematic.pdf
+│   ├── SCHEMATIC.md
+│   ├── ARCHITECTURE.md
+│   ├── PINOUT.md
+│   ├── MANUFACTURING.md
+│   ├── VALIDATION.md
+│   │
+│   └── images/
+│       ├── 3d-front.png
+│       ├── 3d-back.png
+│       ├── 3d_2.png
+│       ├── layout_1.png
+│       ├── layout_2.png
+│       └── pcb-routing.png
+│
+├── project/
+│   ├── design-notes.md
+│   ├── repository-audit.md
+│   └── SHA256SUMS.md
+│
+└── archive/
+    └── original/
