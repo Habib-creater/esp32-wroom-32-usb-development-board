@@ -1,0 +1,12 @@
+# Treat KiCad and documentation assets as binary where appropriate
+*.kicad_pcb binary
+*.kicad_sch binary
+*.kicad_pro binary
+*.pdf binary
+*.png binary
+*.zip binary
+*.gbr text
+*.drl text
+*.pos text
+*.csv text
+*.md text

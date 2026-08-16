@@ -1,0 +1,43 @@
+# Source Manifest
+
+SHA-256 hashes for the main project and documentation artifacts in this release.
+
+- `.gitattributes` — `c22337d3911dba8e778a079e9cddec49ef5befcb478dcf8055bb8840696ca57d`
+- `.gitignore` — `17954453cc4db56c79c13280bc190a9ac1008f1d8a72236e25ddc873584e07b8`
+- `CHANGELOG.md` — `22866446523a615d24d3174107f0dadd12a3176eb197545dc980b21070b56c78`
+- `LICENSE` — `36684fe875f8914fe9af1ecb36318b49027bc31b2f73c1116ad72687ec3db8d7`
+- `README.md` — `beb3877d6491674556878d4a49b15a9401a58900e2a4d0d41e98bb7d6a626071`
+- `archive/original/ESP32-WROOM-32-Schematic-original-export.pdf` — `f834f13157c191f0922dbc93e3181cfd9ba2172fc5fe5697c0e2f7f1350f2f84`
+- `archive/original/ESP32-WROOM-32-local-settings.kicad_prl` — `830d12710ac7768775227a40c409e065490e81e9ceb201bbdb8c7f17bad0a84f`
+- `archive/original/ESP32-WROOM-32-schematic-project.kicad_pro` — `937c43b4457b300da95eb26cc7f1625c0e7c22c4f7a7db92488d600aa29e3fde`
+- `archive/original/Gerber-files-original.zip` — `971d10ba2f91369a2feaa5c93d3fb075969464fe3341e255b5e17154982284af`
+- `docs/ARCHITECTURE.md` — `5820f05fafda45410c691d8041e55390d0cb9df73748db948d41f7fe9ef07288`
+- `docs/MANUFACTURING.md` — `ac4cc14db2f703171f65bce028c2522d45288c2a3177593744864755c8f8e65f`
+- `docs/PINOUT.md` — `be008da68e1cc7492db09eca8a0be07501b71c762ee0c0ccd1261d778df5291c`
+- `docs/SCHEMATIC.md` — `17f57da81408eb7a65fc48d7f093084c104b3559b39af7f8bf97174f2f2cb312`
+- `docs/VALIDATION.md` — `5fdd893c177ef68eac17f03ea38e6a29e78a4cea8ceacc02f6880ca14576b213`
+- `docs/images/3d-back.png` — `5e814b01523aff0a52be717bfa461d5bb79e9cdb0a290bdbcdb6fd7e25b5c21e`
+- `docs/images/3d-front.png` — `e0ea08ea8ce184a689c62998e04d3fca6c8c65ab4ad3bdb652bb09402b8d641f`
+- `docs/images/pcb-layout-alternate.png` — `201e29295b1a2b29fa0f7324cfa98a368a77d64aff42121b8b9d4cb472542d7d`
+- `docs/images/pcb-layout.png` — `deba211d32062db9e313662f9431243d4601b93ce364b8e546b59aa4b918ac0d`
+- `docs/images/pcb-routing.png` — `095e13d832ba9381276cc568ace2f2ee95e327030a59e35dd2b486455b281c23`
+- `hardware/bom/ESP32-WROOM-32_BOM.csv` — `3e506f2167dbbabaa2e0a677c23bc74c2b537125b384d1251249cb84f9510ff5`
+- `hardware/bom/README.md` — `cdbc277ddf3359509c0f1d5ebd5f5e53a446531f17073da8886ea2032b95f840`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-B_Cu.gbr` — `bb105b336eeeceabbf4e30fba1c2ee8893f892fc5d1b65b10f9d3de1880fe179`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-B_Mask.gbr` — `30df2a11e81d982a76e65ee3b6e9a3eee4df2a7b38da3ea1d09f832d733f6a3e`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-B_Paste.gbr` — `55da1254a07b242b6538c6cabdd60329de44e11d029f67c7b9a4892d009233f0`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-B_Silkscreen.gbr` — `59ec2790c2c227014228258b6a325530fcafbf25f334637314e17b9465ec2f30`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-Edge_Cuts.gbr` — `a8aa600330f78b38a431efeaac674c9fa2f15443f523edda743703774e2cd74d`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-F_Cu.gbr` — `619a6800fd5cd26b39765ba5a6fac12b6de4f2ca43234f4961bf229982ef0385`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-F_Mask.gbr` — `a3e69fd8440a097aff6d6e1b73943629a1a84e05e4332f0a236bb2f368c66ff4`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-F_Paste.gbr` — `1d2f7c370d4ac93e1a7858c7d652f56634cea92a33551ed909b5c0a6b113503b`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-F_Silkscreen.gbr` — `41a3e0a04a9aef3ebe38438caaf95dbd8c06ecd8a503a07d2a8b157d61672c01`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-bottom.pos` — `0f3cfc3d6c4a4be94eff3f79dd6bc4cfa4ff51407ee297cf1e1aa81252fea7fe`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-job.gbrjob` — `b2bc3ee434637d5ded23086e5da7e22bae44da07f1ea35026b9e81554b51ce31`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32-top.pos` — `898836c0b58bbab8ba6cb760b6f18ad4a62d5fb6f7b585308a112d585a7776d6`
+- `hardware/fabrication/gerbers/ESP32 WROOM 32.drl` — `d2c2a3b99136d727d43dd84a5c6a3518bf268e3ad4e98e2a7ab3e49740923615`
+- `hardware/kicad/ESP32-WROOM-32.kicad_pcb` — `8b643c558ab66fcaa2be5ab577ac67f9eccb0aee2bad67058061362d70b3fb06`
+- `hardware/kicad/ESP32-WROOM-32.kicad_pro` — `6a67c966c0af01d3a8bfe6e43fbccba44d0ff207f43f9b5da8bab8c979c23e1c`
+- `hardware/kicad/ESP32-WROOM-32.kicad_sch` — `ff7822761df1772f4dfdbdbbd600abaaeceb2bc334b5d65ac88e36c07196c115`
+- `project/design-notes.md` — `be203f28deb2e3e81fc1b68c5292edb199d65fa93a65ec06e892f60cfa9684d2`
+- `project/repository-audit.md` — `209b4afcac878fb8aa7fa591820ddbf67d7fbfd61426eff16a1dfc285f7583c6`
