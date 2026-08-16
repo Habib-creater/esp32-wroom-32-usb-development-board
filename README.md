@@ -92,3 +92,194 @@ flowchart LR
     SCL --> ESP
 
     ESP --> GPIO[GPIO Expansion Headers]
+
+---
+
+## Schematic
+
+The complete electrical schematic is available as a PDF for detailed review.
+
+**[📄 View ESP32-WROOM-32 Schematic PDF](docs/ESP32-WROOM-32-Schematic.pdf)**
+
+The editable KiCad schematic source is also included in the repository:
+
+**[Open KiCad Schematic](hardware/kicad/ESP32-WROOM-32.kicad_sch)**
+
+---
+
+## PCB Layout
+
+The PCB is a compact **51.75 mm × 31.00 mm, 2-layer design** with a nominal thickness of 1.6 mm.
+
+![ESP32-WROOM-32 PCB Layout](docs/images/pcb-layout.png)
+
+The PCB layout was developed with consideration for:
+
+- ESP32 antenna region and RF keepout
+- USB interface routing
+- Power distribution
+- Ground return paths
+- Local IC decoupling
+- Component placement
+- Manufacturing clearances
+- Board-edge constraints
+- Signal routing
+
+The editable KiCad PCB source is included in the repository:
+
+**[Open KiCad PCB](hardware/kicad/ESP32-WROOM-32.kicad_pcb)**
+
+---
+
+## PCB Routing
+
+The completed PCB routing is shown below.
+
+![ESP32-WROOM-32 PCB Routing](docs/images/pcb-routing.png)
+
+The routing includes:
+
+- USB D+ / D−
+- USB-to-UART connections
+- ESP32 UART connections
+- I²C signals
+- Power distribution
+- GPIO connections
+- Ground connections
+
+---
+
+## 3D Board Views
+
+### Front View
+
+![ESP32-WROOM-32 3D Front View](docs/images/3d-front.png)
+
+### Back View
+
+![ESP32-WROOM-32 3D Back View](docs/images/3d-back.png)
+
+---
+
+## Design Verification
+
+The schematic and PCB were reviewed using KiCad's electrical and physical design verification tools.
+
+### Electrical Rules Check (ERC)
+
+ERC was completed to review:
+
+- Power connectivity
+- Pin electrical types
+- Net connectivity
+- Unconnected pins
+- Driver conflicts
+- Interface connections
+- Electrical rule violations
+
+Relevant ERC issues were reviewed and resolved as part of the schematic verification process.
+
+### Design Rules Check (DRC)
+
+PCB DRC was completed to review:
+
+- Track clearances
+- Pad clearances
+- Via clearances
+- Board-edge clearances
+- Copper constraints
+- Solder-mask constraints
+- Connectivity
+- Manufacturing-rule constraints
+
+The resulting PCB layout was reviewed for unresolved critical DRC violations.
+
+### Verification Summary
+
+| Verification Item | Status |
+|---|---|
+| Schematic ERC | ✅ Completed |
+| PCB DRC | ✅ Completed |
+| Net Connectivity | ✅ Reviewed |
+| Component Footprints | ✅ Reviewed |
+| Board Dimensions | ✅ Verified |
+| Manufacturing Outputs | ✅ Generated |
+| PCB Fabrication | Not yet performed |
+| Hardware Bring-up | Not yet performed |
+| Electrical Measurements | Not yet performed |
+| RF Validation | Not yet performed |
+
+---
+
+## Manufacturing Data
+
+The repository includes the generated manufacturing data associated with the PCB design.
+
+The manufacturing package contains:
+
+- Gerber copper layers
+- Solder-mask layers
+- Silkscreen layers
+- Paste layers
+- Board outline
+- Drill files
+- Manufacturing-related outputs
+
+**[View Manufacturing Documentation](docs/MANUFACTURING.md)**
+
+---
+
+## Bill of Materials
+
+The project includes a component-level Bill of Materials for the board.
+
+**[View Bill of Materials](hardware/bom/ESP32-WROOM-32_BOM.csv)**
+
+The BOM contains component references, values, footprints, and available part/manufacturer information.
+
+---
+
+## Repository Structure
+
+```text
+ESP32-WROOM-32-USB-Development-Board/
+│
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── .gitignore
+├── .gitattributes
+│
+├── hardware/
+│   ├── kicad/
+│   │   ├── ESP32-WROOM-32.kicad_pro
+│   │   ├── ESP32-WROOM-32.kicad_sch
+│   │   └── ESP32-WROOM-32.kicad_pcb
+│   │
+│   ├── bom/
+│   │   └── ESP32-WROOM-32_BOM.csv
+│   │
+│   └── fabrication/
+│       └── gerbers/
+│
+├── docs/
+│   ├── ESP32-WROOM-32-Schematic.pdf
+│   ├── SCHEMATIC.md
+│   ├── ARCHITECTURE.md
+│   ├── PINOUT.md
+│   ├── MANUFACTURING.md
+│   ├── VALIDATION.md
+│   │
+│   └── images/
+│       ├── 3d-front.png
+│       ├── 3d-back.png
+│       ├── pcb-layout.png
+│       └── pcb-routing.png
+│
+├── project/
+│   ├── design-notes.md
+│   ├── repository-audit.md
+│   └── SHA256SUMS.md
+│
+└── archive/
+    └── original/
