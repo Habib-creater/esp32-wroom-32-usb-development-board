@@ -93,5 +93,4 @@ flowchart LR
 
     ESP --> GPIO[GPIO Expansion Headers]
 
----
 
