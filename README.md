@@ -98,13 +98,9 @@ flowchart LR
 
 ## Schematic
 
-The complete electrical schematic is available as a PDF for detailed review.
+The complete electrical schematic is available as a PDF:
 
-**[📄 View ESP32-WROOM-32 Schematic PDF](ESP32-WROOM-32-Schematic-original-export.pdf)**
-
-The editable KiCad schematic source is also included in the repository.
-
-**[Open KiCad Schematic](hardware/kicad/ESP32-WROOM-32.kicad_sch)**
+[📄 View ESP32-WROOM-32 Schematic PDF](./ESP32-WROOM-32-Schematic-original-export.pdf)
 ## PCB Layout
 
 The PCB is a compact **51.75 mm × 31.00 mm, 2-layer design** with a nominal thickness of 1.6 mm.
