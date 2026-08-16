@@ -100,9 +100,11 @@ flowchart LR
 
 ## Schematic
 
-The complete electrical schematic for the ESP32-WROOM-32 USB Development Board is provided below.
+## Schematic
 
-**[📄 View ESP32-WROOM-32 Schematic PDF](https://raw.githubusercontent.com/Habib-creater/esp32-wroom-32-usb-development-board/main/archive/original/ESP32-WROOM-32-Schematic-original-export.pdf)**
+The complete electrical schematic is available as a PDF for detailed review.
+
+[📄 View ESP32-WROOM-32 Schematic PDF](./archive/original/ESP32-WROOM-32-Schematic-original-export.pdf)
 
 The PDF contains the complete electrical design, including:
 
